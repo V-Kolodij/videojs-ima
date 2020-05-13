@@ -487,6 +487,8 @@ PlayerWrapper.prototype.onAdBreakEnd = function () {
     this.vjsPlayer.ads.endLinearAdMode();
   }
   this.vjsControls.show();
+	//added this to autostart play for vjsplayer (default was only show controls panel)
+  this.vjsPlayer.play();
 };
 
 /**
